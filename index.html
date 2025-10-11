@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oila Testi Ilovasini Yuklab Olish</title>
+    <style>
+        /* Barcha qurilmalar uchun umumiy uslublar */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .header-gif {
+            width: 120px; /* Gif o'lchami */
+            height: 120px;
+            margin-bottom: 30px;
+            border-radius: 50%; /* Gifni dumaloq qilish */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-decoration: none; /* Havola uchun chiziqni olib tashlash */
+            display: inline-block; /* Blok element kabi ishlashi uchun */
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .ai-notice {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 50px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* planshetlar uchun moslashuv */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            .header-gif {
+                width: 100px;
+                height: 100px;
+            }
+            .download-btn {
+                padding: 16px 30px;
+                font-size: 16px;
+            }
+        }
+
+        /* Mobil qurilmalar uchun moslashuv */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px;
+            }
+            .header-gif {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 25px;
+            }
+            .download-btn {
+                padding: 15px 25px;
+                font-size: 14px;
+                width: 100%; /* Ekran kengligini to'liq egallash */
+                box-sizing: border-box;
+            }
+            .ai-notice {
+                font-size: 12px;
+            }
+            .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- MUHIM: "api.gif" nomli faylni ushbu HTML fayl bilan bir papkaga joylashtiring -->
+        <img src="api.gif" alt="API animatsiyasi" class="header-gif">
+        
+        <!-- Yuklab olish tugmasi -->
+        <a href="https://github.com/salomsalor939-arch/oiladavrasi/releases/download/1.0.0/OILA_TEST.apk" class="download-btn" download>Oila Testi ilovasini yuklab olish uchun yuklab olish tugmasini bosing</a>
+        
+        <!-- AI haqida izoh -->
+        <p class="ai-notice">AI qo'shilmagan</p>
+    </div>
+
+    <!-- Mualliflik huquqi -->
+    <div class="footer">
+        &copy; ARZUCODER
+    </div>
+
+</body>
+</html>
